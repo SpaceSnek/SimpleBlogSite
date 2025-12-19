@@ -53,7 +53,6 @@ def blog_index():
 
 @app.route('/blog/<post_name>')
 def render_post(post_name):
-    # Updated path to the new root-level posts folder
     safe_name = secure_filename(post_name)
     path = os.path.join(app.root_path, 'posts', f'{safe_name}.md')
     try:
