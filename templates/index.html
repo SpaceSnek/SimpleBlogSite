@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block subheader %}
+<h3>A collection of my unghinged bullshittery</h3>
+{% endblock %}
+
+{% block content %}
+<p>Welcome to my website. Here you will find a collection of my projects, thoughts, and more as i strive to write more in the coming years about my projects and thoughts. this website is <span class="highlight">NOT</span> fancy and it does not need to be.</p>
+<p>Below you will find the current tech stack:</p>
+<ul>
+    <li><span class="highlight">Connection:</span> <a href="https://gunicorn.org/">Gunicorn</a></li>
+    <li><span class="highlight">Frontend:</span> HTML and CSS for styling</li>
+    <li><span class="highlight">Theming:</span> Following the <a href="https://github.com/catppuccin/catppuccin">Catppuccin theme</a></li>
+    <li><span class="highlight">Templating:</span> <a href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja2</a> and <a href="https://github.com/trentm/python-markdown2">Markdown2</a></li>
+    <li><span class="highlight">Backend:</span> <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask</a> and <a href="https://www.python.org/">Python</a></li>
+    <li><span class="highlight">Hosting:</span> My house</li>
+</ul>
+<p>As of this revision, this website page is currently <10kb </p>
+<p>In the future, i intend to add markdown processing on the backend side of things to streamline the blog aspect of this site.</p>
+<a href="/blog" style="display: table; margin: 0 auto;">
+    Check out my blog
+</a>
+{% endblock %}

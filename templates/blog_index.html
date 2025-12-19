@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Blog Archive{% endblock %}
+
+{% block subheader %}
+    <h3>A directory of all current blog posts.</h3>
+    <a href="{{ url_for('index') }}" class="back-link">
+        ← Back to Home
+    </a>
+{% endblock %}
+
+{% block content %}
+<div class="main-container-content archive-list"> {% for month, posts in grouped_posts.items() %}
+        <h3 class="month-header">
+            {{ month }}
+        </h3>
+        <ul class="post-links">
+            {% for post in posts %}
+            <li class="post-item">
+                <a href="{{ url_for('render_post', post_name=post) }}">
+                    {{ post }}
+                </a>
+            </li>   
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</div>
+{% endblock %}

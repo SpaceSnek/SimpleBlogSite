@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<article class="main-container-content blog-post-body">
+    {{ content|safe }}
+    
+    <hr class="post-divider">
+    <a href="{{ url_for('blog_index') }}" class="back-to-archive">← Back to Archive</a>
+</article>
+{% endblock %}
