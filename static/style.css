@@ -134,3 +134,31 @@ a:hover {
     border: 0;
     border-top: 1px solid var(--surface1);
 }
+/* Mobile Friendly Adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        width: 95vw;
+        max-width: 95vw;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .main-container-header {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .github-link {
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .main-container-content {
+        font-size: 15px;
+    }
+    .blog-post-body pre {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
